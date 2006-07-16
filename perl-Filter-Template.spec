@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README
 %{perl_vendorlib}/Filter/Template.pm
-%dir %{perl_vendorlib}/Filter/Template
+%attr(755,root,root) %dir %{perl_vendorlib}/Filter/Template
 %{perl_vendorlib}/Filter/Template/UseBytes.pm
 %{_mandir}/man3/*
