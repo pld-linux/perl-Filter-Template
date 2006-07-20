@@ -1,33 +1,39 @@
 #
 # Conditional build:
-%bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Filter
 %define		pnam	Template
-Summary:	perl(Filter::Template)
+Summary:	Filter::Template - source filter for inline code templates
+Summary(pl):	Filter::Template - filtr kodu ¼ród³owego dla szablonów kodu inline
 Name:		perl-Filter-Template
 Version:	1.02
 Release:	0.1
-# note if it is "same as perl"
-License:	(enter GPL/LGPL/BSD/BSD-like/Artistic/other license name here)
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	15aa7b46d94c2dcd9fe0acc8914943df
-# most of CPAN modules have generic URL (substitute pdir and pnam here)
-URL:		http://search.cpan.org/dist/Filter-Template
+URL:		http://search.cpan.org/dist/Filter-Template/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with autodeps} || %{with tests}
-#BuildRequires:	perl-
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-perl(Filter::Template)
+Filter::Template is a Perl source filter that provides simple inline
+source code templates. Inlined source code can be significantly faster
+than subroutines, especially for small-scale functions like accessors
+and mutators. On the other hand, they are more difficult to maintain
+and use. Choose your trade-offs wisely.
 
+%description -l pl
+Filter::Template to filtr kodu ¼ród³owego Perla udostêpniaj±cy proste
+szablony kodu ¼ród³owego inline. Kod ¼ród³owy inline mo¿e byæ znacz±co
+szybszy ni¿ podprocedury, zw³aszcza dla ma³ych funkcji takich jak
+accessor czy mutator. Z drugiej strony s± one du¿o trudniejsze w
+utrzymywaniu i u¿ywaniu. Trzeba dokonaæ m±drego wyboru.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README
 %{perl_vendorlib}/Filter/Template.pm
-%attr(755,root,root) %dir %{perl_vendorlib}/Filter/Template
+%dir %{perl_vendorlib}/Filter/Template
 %{perl_vendorlib}/Filter/Template/UseBytes.pm
 %{_mandir}/man3/*
