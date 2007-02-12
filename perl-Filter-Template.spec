@@ -6,7 +6,7 @@
 %define		pdir	Filter
 %define		pnam	Template
 Summary:	Filter::Template - source filter for inline code templates
-Summary(pl.UTF-8):   Filter::Template - filtr kodu źródłowego dla szablonów kodu inline
+Summary(pl.UTF-8):	Filter::Template - filtr kodu źródłowego dla szablonów kodu inline
 Name:		perl-Filter-Template
 Version:	1.02
 Release:	1
