@@ -6,7 +6,7 @@
 %define		pdir	Filter
 %define		pnam	Template
 Summary:	Filter::Template - source filter for inline code templates
-Summary(pl):	Filter::Template - filtr kodu ¼ród³owego dla szablonów kodu inline
+Summary(pl.UTF-8):   Filter::Template - filtr kodu ÅºrÃ³dÅ‚owego dla szablonÃ³w kodu inline
 Name:		perl-Filter-Template
 Version:	1.02
 Release:	1
@@ -28,12 +28,12 @@ than subroutines, especially for small-scale functions like accessors
 and mutators. On the other hand, they are more difficult to maintain
 and use. Choose your trade-offs wisely.
 
-%description -l pl
-Filter::Template to filtr kodu ¼ród³owego Perla udostêpniaj±cy proste
-szablony kodu ¼ród³owego inline. Kod ¼ród³owy inline mo¿e byæ znacz±co
-szybszy ni¿ podprocedury, zw³aszcza dla ma³ych funkcji takich jak
-accessor czy mutator. Z drugiej strony s± one du¿o trudniejsze w
-utrzymywaniu i u¿ywaniu. Trzeba dokonaæ m±drego wyboru.
+%description -l pl.UTF-8
+Filter::Template to filtr kodu ÅºrÃ³dÅ‚owego Perla udostÄ™pniajÄ…cy proste
+szablony kodu ÅºrÃ³dÅ‚owego inline. Kod ÅºrÃ³dÅ‚owy inline moÅ¼e byÄ‡ znaczÄ…co
+szybszy niÅ¼ podprocedury, zwÅ‚aszcza dla maÅ‚ych funkcji takich jak
+accessor czy mutator. Z drugiej strony sÄ… one duÅ¼o trudniejsze w
+utrzymywaniu i uÅ¼ywaniu. Trzeba dokonaÄ‡ mÄ…drego wyboru.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
