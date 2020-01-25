@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Filter
 %define		pnam	Template
 Summary:	Filter::Template - source filter for inline code templates
