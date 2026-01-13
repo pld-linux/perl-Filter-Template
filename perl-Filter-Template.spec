@@ -8,7 +8,7 @@ Summary:	Filter::Template - source filter for inline code templates
 Summary(pl.UTF-8):	Filter::Template - filtr kodu źródłowego dla szablonów kodu inline
 Name:		perl-Filter-Template
 Version:	1.03
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
