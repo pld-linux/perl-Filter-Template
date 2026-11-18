@@ -7,13 +7,13 @@
 Summary:	Filter::Template - source filter for inline code templates
 Summary(pl.UTF-8):	Filter::Template - filtr kodu źródłowego dla szablonów kodu inline
 Name:		perl-Filter-Template
-Version:	1.03
-Release:	2
+Version:	1.043
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Filter/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ea654b36d5de0f1167566690e6fce108
+Source0:	https://www.cpan.org/authors/id/R/RC/RCAPUTO/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	81fb9faaa969a3aad85b30efc574bb86
 URL:		http://search.cpan.org/dist/Filter-Template/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
